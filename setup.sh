@@ -55,10 +55,10 @@ else
 fi
 
 # Build 1.19
-if [ -f ~/.m2/repository/org/spigotmc/spigot/1.19-R0.1-SNAPSHOT/spigot-1.19-R0.1-SNAPSHOT.jar ]; then
+if [ -f ~/.m2/repository/org/spigotmc/spigot/1.19-R0.1-SNAPSHOT/spigot-1.19.2-R0.1-SNAPSHOT.jar ]; then
     echo "1.19 already exists, skipping build"
 else
-    java -jar BuildTools.jar --rev 1.19 --remapped
+    java -jar BuildTools.jar --rev 1.19.2 --remapped
 fi
 
 # Restore git information
